@@ -2,40 +2,45 @@
 
 ## 📌 Project Description
 
-MedNex Enterprise HMS is a full-stack Hospital Management System developed using Spring Boot, React, JWT Authentication, and MySQL.
+MedNex Enterprise HMS is a full-stack Hospital Management System developed using Spring Boot, React.js, JWT Authentication, and MySQL.
 
-This project helps manage:
+The system helps manage:
 - Patients
 - Doctors
 - Appointments
 - Authentication & Authorization
 - Dashboard Statistics
+- Email OTP Verification
 
-The system is designed with secure REST APIs and role-based access control.
+The application is designed using secure REST APIs with role-based access control for different users such as Admin, Doctor, and Nurse.
 
 ---
 
-## 🚀 Tech Stack
+# 🚀 Tech Stack
 
-### Backend
+## Backend
 - Java
 - Spring Boot
 - Spring Security
 - JWT Authentication
 - Hibernate / JPA
 - MySQL
+- Spring Mail Sender
 
-### Frontend
+## Frontend
 - React.js
 - Axios
 - React Router
+- CSS
 
 ---
 
-## ✨ Features
+# ✨ Features
 
 - Secure Login Authentication
-- Role-Based Access
+- JWT-Based Authentication
+- Email OTP Verification
+- Role-Based Access Control
 - Patient Management
 - Doctor Management
 - Appointment Scheduling
@@ -45,35 +50,51 @@ The system is designed with secure REST APIs and role-based access control.
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```bash
 MedNex/
 │
 ├── backend/
+│
 ├── frontend/
+│
+├── screenshots/
+│
 └── README.md
 ```
 
 ---
 
-## 🔐 Authentication
+# 🔐 Authentication
 
 JWT-based authentication is implemented using Spring Security.
 
-Roles:
+### User Roles
 - ADMIN
 - DOCTOR
 - NURSE
 
 ---
 
-## 🗄️ Database
+# 📧 OTP Verification
 
-Database used:
+Email OTP verification is implemented using Spring Boot Mail Sender and Gmail SMTP integration.
+
+### OTP Flow
+1. User enters email
+2. Backend generates OTP
+3. OTP is sent to registered email
+4. User verifies OTP using API
+
+---
+
+# 🗄️ Database
+
+Database Used:
 - MySQL
 
-Main Tables:
+### Main Tables
 - Users
 - Doctors
 - Patients
@@ -81,16 +102,26 @@ Main Tables:
 
 ---
 
-## ⚙️ Installation
+# 📊 ER Diagram
 
-### Backend
+(Add ER Diagram Image Here)
+
+```md
+![ER Diagram](ER-Diagram.png)
+```
+
+---
+
+# ⚙️ Installation & Setup
+
+## Backend Setup
 
 ```bash
 cd backend
 mvn spring-boot:run
 ```
 
-### Frontend
+## Frontend Setup
 
 ```bash
 cd frontend
@@ -100,14 +131,15 @@ npm start
 
 ---
 
-## 📌 Future Improvements
+# 📌 Future Improvements
 
 - Docker Deployment
-- Redis Cache
-- Multi-Tenant Support
+- Email Notifications
+- Advanced Reports
+- Mobile Responsive UI
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 Maaraj

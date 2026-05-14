@@ -104,11 +104,7 @@ Database Used:
 
 # 📊 ER Diagram
 
-(Add ER Diagram Image Here)
-
-```md
-![ER Diagram](ER-Diagram.png)
-```
+![ER Diagram](screenshots/ER-Diagram.png)
 
 ---
 
